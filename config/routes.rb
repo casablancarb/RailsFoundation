@@ -1,4 +1,18 @@
 NnwlRails::Application.routes.draw do
+  devise_for :users
+
+  resources :users
+
+
+  namespace :api do
+    resources :celebrities do 
+      collection do 
+        
+      end
+    end
+  end
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
