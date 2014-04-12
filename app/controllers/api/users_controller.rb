@@ -32,7 +32,7 @@ class Api::UsersController < ApplicationController
 		else
 			# set up variables for json
 			@success = false
-			@message = "Account couldn't be created"
+			@message = @user.errors
 		end
 	end
 

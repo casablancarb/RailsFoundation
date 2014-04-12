@@ -5,9 +5,10 @@ NnwlRails::Application.routes.draw do
 
 
   namespace :api do
-    resources :celebrities do 
+    resources :users do 
       collection do 
-        
+        post 'register'
+        post 'auth'
       end
     end
   end
